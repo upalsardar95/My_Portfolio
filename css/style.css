@@ -398,6 +398,22 @@ header.sticky .nav-bar {
   transition: 0.3s ease;
 }
 
+.edu-list .item .year {
+  font-size: var(--small-font-size);
+  margin-bottom: 5px;
+}
+
+.edu-list .item p {
+  color: var(--third-color);
+  font-size: var(--small-font-size);
+}
+
+.edu-list .item p span {
+  color: var(--first-color);
+  font-size: var(--normal-font-size);
+  font-weight: 500;
+}
+
 /*=======Services section=======*/
 
 /*=======Portfolio section=======*/
