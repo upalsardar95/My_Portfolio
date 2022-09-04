@@ -204,6 +204,11 @@ header.sticky .nav-bar {
   color: var(--second-color);
 }
 
+.nav-menu-btn {
+  display: none;
+  display: block;
+}
+
 /*=======Home section=======*/
 
 .home {
@@ -427,12 +432,14 @@ header.sticky .nav-bar {
 }
 .skills-description {
   max-width: 700px;
+  font-size: 1.1em;
   margin-bottom: 50px;
 }
 
-.skills-description h3 {
-  font-size: 2em;
-  margin-bottom: 5px;
+.skills-description p span {
+  color: var(--second-color);
+  font-weight: 600;
+  font-size: 1.2em;
 }
 
 .skills-info {
@@ -573,6 +580,18 @@ header.sticky .nav-bar {
   margin: 10px 0 22px;
 }
 
+.education .edu-list .item {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 10px;
+}
+.education .edu-list .item .icon {
+  font-size: 2em;
+  padding: 10px;
+  color: var(--second-color);
+}
+
 .edu-list .item:hover,
 .bar:hover,
 .experience-card:hover {
@@ -654,9 +673,9 @@ header.sticky .nav-bar {
 .service-modal-body {
   position: relative;
   background: var(--modal-bg-color);
-  max-width: 600px;
+  max-width: 800px;
   margin: 20px;
-  padding: 40px;
+  padding: 20px;
   border-radius: 10px;
   box-shadow: var(--box-shadow);
   transform: translateY(-50px);
@@ -1095,6 +1114,28 @@ footer a {
 /*=======Media query max-width 1070px=======*/
 @media screen and (max-width: 1070px) {
   /*=======Header navigation menu=======*/
+
+  .navigation {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--transparent-color-01);
+  }
+
+  .nav-menu-btn {
+    background: url(../images/menu-btn.png) no-repeat;
+    filter: var(--color-filter);
+    background-size: 30px;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+  }
 
   /*=======Home section=======*/
 
