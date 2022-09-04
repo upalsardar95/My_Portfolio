@@ -17,7 +17,16 @@
   <body>
     <!--=======Scroll to top button=======-->
 
+    <div class="scrollToTop-btn flex-center">
+      <i class="fas fa-arrow-up"></i>
+    </div>
+
     <!--=======Light/Dark theme button=======-->
+
+    <div class="theme-btn flex-center">
+      <i class="fas fa-moon"></i>
+      <i class="fas fa-sun"></i>
+    </div>
 
     <!--=======Header=======-->
     <header>
@@ -25,7 +34,7 @@
         <a href="#" class="logo">UPAL</a>
         <div class="navigation">
           <div class="nav-items">
-            <a href="#home">Home</a>
+            <a class="active" href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#skills">Skills</a>
             <a href="#services">Services</a>
@@ -656,10 +665,105 @@
 
     <!--=======Contact section=======-->
 
-    <section class="contact section" id="contact"></section>
-
+    <section class="contact section" id="contact">
+      <div class="container flex-center">
+        <h1 class="section-title-01">Contact Me</h1>
+        <h2 class="section-title-02">Contact Me</h2>
+        <div class="content">
+          <div class="contact-left">
+            <h2>Let's discuss your project</h2>
+            <ul class="contact-list">
+              <li>
+                <h3 class="item-title"><i class="fas fa-phone"></i> Phone</h3>
+                <span>+91 9051-711-268</span>
+              </li>
+              <li>
+                <h3 class="item-title">
+                  <i class="fas fa-envelope"></i> Email Address
+                </h3>
+                <span
+                  ><a href="mailto:upal.sardar@gmail.com"
+                    >upal.sardar@gmail.com</a
+                  >
+                </span>
+              </li>
+              <li>
+                <h3 class="item-title">
+                  <i class="fas fa-map-marker-alt"></i> Official Address
+                </h3>
+                <span>Madhyamgram, Kolkata- 700132</span>
+              </li>
+            </ul>
+          </div>
+          <div class="contact-right">
+            <p>
+              I'm always open to discussing product <br /><span>
+                design work or partnerships.</span
+              >
+            </p>
+            <form action="" class="contact-form">
+              <div class="first-row">
+                <input type="text" placeholder="Name" />
+              </div>
+              <div class="second-row">
+                <input type="email" placeholder="Email" />
+                <input type="text" placeholder="Subject" />
+              </div>
+              <div class="third-row">
+                <textarea
+                  name="message"
+                  id=""
+                  rows="7"
+                  placeholder="Message"
+                ></textarea>
+              </div>
+              <button class="btn" type="submit">
+                Send Message <i class="fas fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!--=======Footer=======-->
-    <h2>1:19:53</h2>
+
+    <footer>
+      <div class="footer-container">
+        <div class="about group">
+          <h2>Upal</h2>
+          <p>Front-End Developer</p>
+          <a href="#about">About Me</a>
+        </div>
+        <div class="hr"></div>
+        <div class="info group">
+          <h3>More</h3>
+          <ul>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="hr"></div>
+        <div class="follow group">
+          <h3>Follow</h3>
+          <ul>
+            <li>
+              <a href=""><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fab fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fab fa-twitter"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-copyright group">
+        <p>© 2022 by Consistent Services. All rights reserved.</p>
+      </div>
+    </footer>
   </body>
 </html>
